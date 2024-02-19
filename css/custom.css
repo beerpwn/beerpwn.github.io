@@ -1,0 +1,81 @@
+/*-------------------------------CUSTOM CSS----------------------------------*/
+
+.carousel-item {
+    height: 75vh;
+    min-height: 400px;
+    background: no-repeat center center scroll;
+    /*margin-top: 50px;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} 
+
+img.logo {
+	max-height: 40px;
+}
+
+/*BOX CARD ROTATION*/
+
+.scene {
+    width: 90%;
+    height: 300px;
+    border: 1px solid #262626;
+    border-radius: 1rem;
+    /*margin: 40px 0;*/
+    /*margin: 0 20px;*/
+    perspective: 600px;
+    padding: 20px;    
+    margin: 0 auto;
+}
+
+.card_box {
+    /*padding: 20px 20px;*/
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.card_box.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    padding: 20px;
+}
+
+.card__face--front img{
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+}
+
+.card__face--back {
+    background-color: #0e0e0e;
+  /*background: blue;*/
+  transform: rotateY(180deg);
+}
+.card__face
+{
+    word-break: break-all;
+    /*margin-top: 40px;*/
+}
+.scene_did{
+    margin: 20px;
+}
+
+.bg-yellow{
+    background-color: #ffe066;
+}
